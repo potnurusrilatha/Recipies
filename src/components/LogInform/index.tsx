@@ -20,9 +20,9 @@ const LogInForm = () => {
     }
  
     console.log("user is:" + user?.name)
- 
-    const handleChange = (event: { target: { value: any } }) => {
-        setUserInput(event.target.value)
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setUserInput(e.target.value)
+  
         console.log(userInput)
  
     }
